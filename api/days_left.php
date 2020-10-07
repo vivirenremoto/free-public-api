@@ -2,6 +2,8 @@
 
 // https://stackoverflow.com/questions/1735252/php-countdown-to-date
 
+date_default_timezone_set("Europe/Madrid");
+
 $date = strtotime($value);
 $remaining = $date - time();
 $days_remaining = floor($remaining / 86400);

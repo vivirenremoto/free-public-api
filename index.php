@@ -23,7 +23,7 @@ $path = __DIR__ . '/api/' . $action . '.php';
 if (file_exists($path)) {
     require $path;
 
-    if ($result == false) {
+    if (is_bool($result) && $result == false) {
         $result = $default;
     }
 
