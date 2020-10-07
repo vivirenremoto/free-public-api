@@ -41,3 +41,8 @@ https://free-public-api.herokuapp.com/age/?value=1986-06-02&callback=printAge
 ```
 printAge(34)
 ```
+
+**Using an API on Google Spreadsheets**
+```
+=IMPORTDATA("https://free-public-api.herokuapp.com/age/?value=1986-06-02")
+```
