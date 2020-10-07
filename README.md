@@ -22,7 +22,7 @@ List of free simple APIs
 - value, default null
 - callback, default null
 - key (if is required, /geocode/ requires a google maps api key)
-- default, default value null
+- default, default value false
 
 **Return response**
 
