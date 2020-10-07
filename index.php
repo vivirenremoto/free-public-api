@@ -1,12 +1,16 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+$request = $_SERVER['REQUEST_URI'];
 
 //////////////////////////
 
-$request = $_SERVER['REQUEST_URI'];
+if( strstr($request, '.test') ){
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+}
+
+//////////////////////////
 
 $t_request = explode('/', current(explode('?', $request)));
 
@@ -17,6 +21,7 @@ $callback = isset($_GET['callback']) ? $_GET['callback'] : null;
 $format = isset($_GET['format']) ? $_GET['format'] : 'text';
 $key = isset($_GET['key']) ? $_GET['key'] : null;
 $default = isset($_GET['default']) ? $_GET['default'] : false;
+$result = false;
 
 $path = __DIR__ . '/api/' . $action . '.php';
 
