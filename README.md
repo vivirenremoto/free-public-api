@@ -21,7 +21,8 @@ List of free simple APIs
 - format, default text [json|text]
 - value, default null
 - callback, default null
-- key (if is required, for example /geocode/ needs a valid google maps api key)
+- key (if is required, /geocode/ requires a google maps api key)
+- default, default value null
 
 **Return response**
 
