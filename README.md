@@ -22,7 +22,7 @@ List of free simple APIs
 1. [Generate QR](https://free-public-api.herokuapp.com/generate_qr/?value=https://github.com/&size=200)
 1. [Encode MD5](https://free-public-api.herokuapp.com/encode_md5/?value=string)
 1. [Encode Base64](https://free-public-api.herokuapp.com/encode_base64/?value=string)
-1. [Decode Base64](https://free-public-api.herokuapp.com/decode_base64/?value=string)
+1. [Decode Base64](https://free-public-api.herokuapp.com/decode_base64/?value=c3RyaW5n)
 
 **Parameters**
 
