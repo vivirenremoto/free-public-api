@@ -18,6 +18,7 @@ List of free simple APIs
 14. [Generate number](https://free-public-api.herokuapp.com/generate_number/?value=50-100)
 15. [Generate hex color](https://free-public-api.herokuapp.com/generate_color/)
 16. [Generate password](https://free-public-api.herokuapp.com/generate_password/?length=8)
+17. [Generate avatar](https://free-public-api.herokuapp.com/generate_avatar/)
 
 **Parameters**
 
