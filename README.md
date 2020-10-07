@@ -2,9 +2,9 @@
  
 List of free simple APIs
 
-1. Get age https://free-public-api.herokuapp.com/age/?value=1986-06-02
-2. Days left https://vivirenremoto.com/public_api/days_left/?value=2020-10-06
-3. Get IP https://free-public-api.herokuapp.com/ip/
+1. Get age by birthdate https://free-public-api.herokuapp.com/age/?value=1986-06-02
+2. Days left by date https://vivirenremoto.com/public_api/days_left/?value=2020-10-06
+3. Get your IP https://free-public-api.herokuapp.com/ip/
 4. Get your user agent https://free-public-api.herokuapp.com/user_agent/
 5. Get your country code https://free-public-api.herokuapp.com/country/
 6. Validate VIES https://free-public-api.herokuapp.com/validate_vies/?value=LU20260743
