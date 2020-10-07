@@ -1,6 +1,7 @@
 <?php
 
 // https://stackoverflow.com/questions/20983339/validate-iban-php
+// https://www.php.net/manual/es/function.bcmod.php
 
 function checkIBAN($iban)
 {
@@ -21,11 +22,25 @@ function checkIBAN($iban)
             $NewString .= $MovedCharArray[$key];
         }
 
-        if (bcmod($NewString, '97') == 1) {
+        if (my_bcmod($NewString, '97') == 1) {
             return true;
         }
     }
     return false;
+}
+
+function my_bcmod($x, $y)
+{
+    $take = 5;
+    $mod = '';
+
+    do {
+        $a = (int) $mod . substr($x, 0, $take);
+        $x = substr($x, $take);
+        $mod = $a % $y;
+    } while (strlen($x));
+
+    return (int) $mod;
 }
 
 $result = checkIBAN($value);
