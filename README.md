@@ -10,7 +10,7 @@ List of free simple APIs
 1. [Validate VIES](https://free-public-api.herokuapp.com/validate_vies/?value=LU20260743)
 1. [Validate DNI](https://free-public-api.herokuapp.com/validate_dni/?value=65839957L)
 1. [Validate CIF](https://free-public-api.herokuapp.com/validate_cif/?value=A62134341)
-1. [Validate IBAN account](https://free-public-api.herokuapp.com/validate_iban/?value=ES6621000418401234567891)
+1. [Validate IBAN](https://free-public-api.herokuapp.com/validate_iban/?value=ES6621000418401234567891)
 1. [Validate email](https://free-public-api.herokuapp.com/validate_email/?value=account@domain.com)
 1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
 1. [Get latitude and longitude by address using Google Maps](https://free-public-api.herokuapp.com/geocode/?value=calle%20d%27ulla%2017%2C%20torroella%20de%20montgri&key=xxx)
