@@ -23,7 +23,7 @@ List of free simple APIs
 1. [Encode MD5](https://free-public-api.herokuapp.com/encode_md5/?value=string)
 1. [Encode Base64](https://free-public-api.herokuapp.com/encode_base64/?value=string)
 1. [Decode Base64](https://free-public-api.herokuapp.com/decode_base64/?value=c3RyaW5n)
-1. [Search photo](https://free-public-api.herokuapp.com/search_photo/?value=cat)
+1. [Search photo from pixabay](https://free-public-api.herokuapp.com/search_photo/?value=dog)
 
 **Parameters**
 
