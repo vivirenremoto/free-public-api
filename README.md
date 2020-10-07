@@ -15,6 +15,9 @@ List of free simple APIs
 11. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
 12. [Get latitude and longitude by address using Google Maps](https://free-public-api.herokuapp.com/geocode/?value=calle%20d%27ulla%2017%2C%20torroella%20de%20montgri&key=xxx)
 13. [Convert text to audio (mp3) using IBM Watson](https://free-public-api.herokuapp.com/speech/?value=hola&voice=es-ES_EnriqueVoice)
+14. [Generate number](https://free-public-api.herokuapp.com/generate_number/?value=50-100)
+15. [Generate hex color](https://free-public-api.herokuapp.com/generate_color/)
+16. [Generate password](https://free-public-api.herokuapp.com/generate_password/?length=8)
 
 **Parameters**
 
