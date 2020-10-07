@@ -16,7 +16,7 @@ $value = isset($_GET['value']) ? $_GET['value'] : null;
 $callback = isset($_GET['callback']) ? $_GET['callback'] : null;
 $format = isset($_GET['format']) ? $_GET['format'] : 'text';
 $key = isset($_GET['key']) ? $_GET['key'] : null;
-$default = isset($_GET['default']) ? $_GET['default'] : null;
+$default = isset($_GET['default']) ? $_GET['default'] : false;
 
 $path = __DIR__ . '/api/' . $action . '.php';
 
@@ -24,7 +24,7 @@ if (file_exists($path)) {
     require $path;
 
     if ($result == false) {
-    	$result = $default;
+        $result = $default;
     }
 
     if ($callback || $format == 'text') {
