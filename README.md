@@ -32,6 +32,10 @@ List of free simple APIs
 1. [Get Pagespeed score](http://free-public-api.herokuapp.com/pagespeed_score/?value=https://github.com/&device=mobile&key=)
 1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
 
+**Support this project**
+
+- [Paypal](https://paypal.me/miquelcamps)
+
 **Parameters**
 
 - format, default text [json|text]
