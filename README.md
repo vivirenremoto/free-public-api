@@ -7,15 +7,14 @@ List of free simple APIs
 1. [Get your IP](https://free-public-api.herokuapp.com/ip/)
 1. [Get your user agent](https://free-public-api.herokuapp.com/user_agent/)
 1. [Get your country code](https://free-public-api.herokuapp.com/country/)
+1. [Get latitude and longitude by address using Google Maps](https://free-public-api.herokuapp.com/geocode/?value=calle%20d%27ulla%2017%2C%20torroella%20de%20montgri&key=xxx)
+1. [Get address by coordinates using Google Maps](https://free-public-api.herokuapp.com/reverse_geocode/?value=42.0412139,3.1251759&key=xxx)
+1. [Get local time by time zone](https://free-public-api.herokuapp.com/local_time/?value=Europe/Madrid)
 1. [Validate VIES](https://free-public-api.herokuapp.com/validate_vies/?value=LU20260743)
 1. [Validate DNI](https://free-public-api.herokuapp.com/validate_dni/?value=65839957L)
 1. [Validate CIF](https://free-public-api.herokuapp.com/validate_cif/?value=A62134341)
 1. [Validate IBAN](https://free-public-api.herokuapp.com/validate_iban/?value=ES6621000418401234567891)
 1. [Validate email](https://free-public-api.herokuapp.com/validate_email/?value=account@domain.com)
-1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
-1. [Get latitude and longitude by address using Google Maps](https://free-public-api.herokuapp.com/geocode/?value=calle%20d%27ulla%2017%2C%20torroella%20de%20montgri&key=xxx)
-1. [Get address by coordinates using Google Maps](https://free-public-api.herokuapp.com/reverse_geocode/?value=42.0412139,3.1251759&key=xxx)
-1. [Get local time by time zone](https://free-public-api.herokuapp.com/local_time/?value=Europe/Madrid)
 1. [Convert text to audio (mp3) using IBM Watson](https://free-public-api.herokuapp.com/speech/?value=hola&voice=es-ES_EnriqueVoice)
 1. [Generate number](https://free-public-api.herokuapp.com/generate_number/?value=50-100)
 1. [Generate hex color](https://free-public-api.herokuapp.com/generate_color/)
@@ -29,6 +28,7 @@ List of free simple APIs
 1. [Search video from pixabay](https://free-public-api.herokuapp.com/search_video/?value=london)
 1. [SEO search volume from keyword surfer](https://free-public-api.herokuapp.com/seo_search_volume/?value=vestidos+de+novia&country=es)
 1. [SEO keyword CPC from keyword surfer](https://free-public-api.herokuapp.com/seo_keyword_cpc/?value=vestidos+de+novia&country=es)
+1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
 
 **Parameters**
 
