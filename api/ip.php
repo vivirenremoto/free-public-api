@@ -1,27 +1,27 @@
 <?php
 
-// https://stackoverflow.com/questions/3003145/how-to-get-the-client-ip-address-in-php
+// https://stackoverflow.com/questions/15699101/get-the-client-ip-address-using-php
 
-$ip = false;
-
-foreach (array(
-    'HTTP_CLIENT_IP',
-    'HTTP_X_FORWARDED_FOR',
-    'HTTP_X_FORWARDED',
-    'HTTP_X_CLUSTER_CLIENT_IP',
-    'HTTP_FORWARDED_FOR',
-    'HTTP_FORWARDED',
-    'REMOTE_ADDR') as $key) {
-    if (array_key_exists($key, $_SERVER)) {
-        foreach (explode(',', $_SERVER[$key]) as $ip) {
-            $ip = trim($ip);
-            if ((bool) filter_var($ip, FILTER_VALIDATE_IP,
-                FILTER_FLAG_IPV4 |
-                FILTER_FLAG_NO_PRIV_RANGE |
-                FILTER_FLAG_NO_RES_RANGE)) {
-            }
-        }
+function get_client_ip()
+{
+    $ipaddress = '';
+    if (getenv('HTTP_CLIENT_IP')) {
+        $ipaddress = getenv('HTTP_CLIENT_IP');
+    } else if (getenv('HTTP_X_FORWARDED_FOR')) {
+        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
+    } else if (getenv('HTTP_X_FORWARDED')) {
+        $ipaddress = getenv('HTTP_X_FORWARDED');
+    } else if (getenv('HTTP_FORWARDED_FOR')) {
+        $ipaddress = getenv('HTTP_FORWARDED_FOR');
+    } else if (getenv('HTTP_FORWARDED')) {
+        $ipaddress = getenv('HTTP_FORWARDED');
+    } else if (getenv('REMOTE_ADDR')) {
+        $ipaddress = getenv('REMOTE_ADDR');
+    } else {
+        $ipaddress = false;
     }
+
+    return $ipaddress;
 }
 
-$result = $ip;
+$result = get_client_ip();
