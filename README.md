@@ -10,6 +10,7 @@ List of free simple APIs
 1. [Get latitude and longitude by address using Google Maps](https://free-public-api.herokuapp.com/geocode/?value=calle%20d%27ulla%2017%2C%20torroella%20de%20montgri&key=xxx)
 1. [Get address by coordinates using Google Maps](https://free-public-api.herokuapp.com/reverse_geocode/?value=42.0412139,3.1251759&key=xxx)
 1. [Get local time by time zone](https://free-public-api.herokuapp.com/local_time/?value=Europe/Madrid)
+1. [Get gravatar](https://free-public-api.herokuapp.com/gravatar/?value=)
 1. [Validate VIES](https://free-public-api.herokuapp.com/validate_vies/?value=LU20260743)
 1. [Validate DNI](https://free-public-api.herokuapp.com/validate_dni/?value=65839957L)
 1. [Validate CIF](https://free-public-api.herokuapp.com/validate_cif/?value=A62134341)
@@ -29,6 +30,7 @@ List of free simple APIs
 1. [SEO search volume from keyword surfer](https://free-public-api.herokuapp.com/seo_search_volume/?value=vestidos+de+novia&country=es)
 1. [SEO keyword CPC from keyword surfer](https://free-public-api.herokuapp.com/seo_keyword_cpc/?value=vestidos+de+novia&country=es)
 1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
+1. [Get Pagespeed score](http://free-public-api.test/pagespeed_score/?value=https://github.com/&device=mobile&key=xxx)
 
 **Parameters**
 
