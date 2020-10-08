@@ -20,6 +20,7 @@ List of free simple APIs
 1. [Generate hex color](https://free-public-api.herokuapp.com/generate_color/)
 1. [Generate password](https://free-public-api.herokuapp.com/generate_password/?length=8)
 1. [Generate avatar](https://free-public-api.herokuapp.com/generate_avatar/)
+1. [Generate name](https://free-public-api.herokuapp.com/generate_name/?value=female)
 1. [Generate QR](https://free-public-api.herokuapp.com/generate_qr/?value=https://github.com/&size=200)
 1. [Encode MD5](https://free-public-api.herokuapp.com/encode_md5/?value=string)
 1. [Encode Base64](https://free-public-api.herokuapp.com/encode_base64/?value=string)
