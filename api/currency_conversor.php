@@ -1,5 +1,7 @@
 <?php
 
+// https://exchangeratesapi.io/
+
 $from = isset($_GET['from']) ? strtoupper($_GET['from']) : false;
 $to = isset($_GET['to']) ? strtoupper($_GET['to']) : false;
 $precision = isset($_GET['precision']) ? $_GET['precision'] : 2;
