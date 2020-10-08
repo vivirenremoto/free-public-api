@@ -8,7 +8,7 @@ List of free simple APIs
 1. [Get your user agent](https://free-public-api.herokuapp.com/user_agent/)
 1. [Get your country code](https://free-public-api.herokuapp.com/country/)
 1. [Get latitude and longitude by address using Google Maps](https://free-public-api.herokuapp.com/geocode/?value=calle%20d%27ulla%2017%2C%20torroella%20de%20montgri&key=)
-1. [Get address by coordinates using Google Maps](https://free-public-api.herokuapp.com/reverse_geocode/?value=42.0412139,3.1251759&key=)
+1. [Get address by coordinates using Google Maps](https://free-public-api.herokuapp.com/geocode_reverse/?value=42.0412139,3.1251759&key=)
 1. [Get local time by time zone](https://free-public-api.herokuapp.com/local_time/?value=Europe/Madrid)
 1. [Get gravatar](https://free-public-api.herokuapp.com/gravatar/?value=)
 1. [Validate VIES](https://free-public-api.herokuapp.com/validate_vies/?value=LU20260743)
