@@ -1,6 +1,6 @@
 # free-public-api
  
-List of free simple APIs (* api key required)
+List of free simple APIs (* api key is required)
 
 1. [Get age by birthdate](https://free-public-api.herokuapp.com/age/?value=1986-06-02)
 1. [Days left by date](https://free-public-api.herokuapp.com/days_left/?value=2020-12-31)
