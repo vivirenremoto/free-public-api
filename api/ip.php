@@ -1,27 +1,15 @@
 <?php
 
-// https://stackoverflow.com/questions/15699101/get-the-client-ip-address-using-php
+// https://stackoverflow.com/questions/18264304/get-clients-real-ip-address-on-heroku
 
-function get_client_ip()
+function getIpAddress()
 {
-    $ipaddress = '';
-    if (getenv('HTTP_CLIENT_IP')) {
-        $ipaddress = getenv('HTTP_CLIENT_IP');
-    } else if (getenv('HTTP_X_FORWARDED_FOR')) {
-        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
-    } else if (getenv('HTTP_X_FORWARDED')) {
-        $ipaddress = getenv('HTTP_X_FORWARDED');
-    } else if (getenv('HTTP_FORWARDED_FOR')) {
-        $ipaddress = getenv('HTTP_FORWARDED_FOR');
-    } else if (getenv('HTTP_FORWARDED')) {
-        $ipaddress = getenv('HTTP_FORWARDED');
-    } else if (getenv('REMOTE_ADDR')) {
-        $ipaddress = getenv('REMOTE_ADDR');
+    if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ipAddresses = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+        return trim(end($ipAddresses));
     } else {
-        $ipaddress = false;
+        return $_SERVER['REMOTE_ADDR'];
     }
-
-    return $ipaddress;
 }
 
-$result = get_client_ip();
+$result = getIpAddress();
