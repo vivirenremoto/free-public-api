@@ -30,6 +30,7 @@ List of free simple APIs
 1. [SEO search volume from keyword surfer](https://free-public-api.herokuapp.com/seo_search_volume/?value=vestidos+de+novia&country=es)
 1. [SEO keyword CPC from keyword surfer](https://free-public-api.herokuapp.com/seo_keyword_cpc/?value=vestidos+de+novia&country=es)
 1. [Get Pagespeed score](http://free-public-api.herokuapp.com/pagespeed_score/?value=https://github.com/&device=mobile&key=)
+1. [Web screenshot from Pagespeed](https://free-public-api.herokuapp.com/screenshot/?value=https://github.com/&device=mobile&key=)
 1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
 
 **Support this project**
