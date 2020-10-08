@@ -4,7 +4,7 @@
 
 // reverse geocoding api - google api console
 
-$url = 'https://maps.google.com/maps/api/geocode/json?latlon=' . urlencode($value) . '&key=' . $key;
+$url = 'https://maps.google.com/maps/api/geocode/json?latlng=' . urlencode($value) . '&key=' . $key;
 $geocode = file_get_contents($url);
 
 $output = json_decode($geocode);
