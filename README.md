@@ -36,15 +36,15 @@ List of free simple APIs
 
 - [Paypal](https://paypal.me/miquelcamps)
 
-**Parameters**
+**GET Parameters**
 
-- format, default text [json|text]
+- format [json|text], default text
 - value, default null
 - callback, default null
 - key (if is required, /geocode/ requires a google maps api key)
 - default, default value false
 
-**Return response**
+**Response**
 
 JSON format
 
