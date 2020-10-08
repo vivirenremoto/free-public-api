@@ -39,7 +39,7 @@ List of free simple APIs (* api key is required)
 1. [Validate credit card](https://free-public-api.herokuapp.com/validate_credit_card/?value=4242424242424242)
 1. [Get credit card type](https://free-public-api.herokuapp.com/credit_card_type/?value=4242424242424242)
 1. [Get International phone prefix](https://free-public-api.herokuapp.com/country_phone_prefix/?value=ES)
-1. [Get product title by EAN code](https://free-public-api.herokuapp.com/product_ean/?value=5030917291098&country=ES)
+1. [Get product title by EAN code](https://free-public-api.herokuapp.com/product_title_ean/?value=5030917291098&country=ES)
 
 **Support this project**
 
