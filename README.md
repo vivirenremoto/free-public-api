@@ -41,7 +41,7 @@ List of free simple APIs (* api key is required)
 1. [Get International phone prefix](https://free-public-api.herokuapp.com/country_phone_prefix/?value=ES)
 1. [Get product title by EAN code](https://free-public-api.herokuapp.com/product_title_ean/?value=5030917291098&country=ES)
 1. [Currency conversor](https://free-public-api.herokuapp.com/currency_conversor/?value=10&from=EUR&to=USD)
-1. [Synonymous](https://free-public-api.herokuapp.com/synonymous/?value=avi%C3%B3n&lang=es)
+1. [Get synonymous](https://free-public-api.herokuapp.com/synonymous/?value=avi%C3%B3n&lang=es)
 
 **Support this project**
 
