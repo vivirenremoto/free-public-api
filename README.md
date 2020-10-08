@@ -26,7 +26,7 @@ List of free simple APIs
 1. [Decode Base64](https://free-public-api.herokuapp.com/decode_base64/?value=c3RyaW5n)
 1. [Search photo from pixabay](https://free-public-api.herokuapp.com/search_photo/?value=dog)
 1. [Search video from pixabay](https://free-public-api.herokuapp.com/search_video/?value=london)
-1. [SEO keyword CPC](https://free-public-api.herokuapp.com/seo_search_cpc/?value=vestidos+de+novia&country=es)
+1. [SEO keyword CPC](https://free-public-api.herokuapp.com/seo_keyword_cpc/?value=vestidos+de+novia&country=es)
 1. [SEO search volume](https://free-public-api.herokuapp.com/seo_search_volume/?value=vestidos+de+novia&country=es)
 
 **Parameters**
