@@ -2,7 +2,9 @@
 
 // https://stackoverflow.com/questions/3807963/how-to-get-longitude-and-latitude-of-any-address/36447589
 
-// geocoding api - google api console
+if (!$key) {
+    die('error - api key (geocoding) and valid billing account are required on https://console.cloud.google.com/apis/');
+}
 
 $url = 'https://maps.google.com/maps/api/geocode/json?address=' . urlencode($value) . '&sensor=false&key=' . $key;
 $geocode = file_get_contents($url);
