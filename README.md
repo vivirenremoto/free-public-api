@@ -11,7 +11,6 @@ List of free simple APIs (* api key is required)
 1. [Get address by coordinates using Google Maps *](https://free-public-api.herokuapp.com/geocode_reverse/?value=42.0412139,3.1251759&key=)
 1. [Get local time by time zone](https://free-public-api.herokuapp.com/local_time/?value=Europe/Madrid)
 1. [Get country code by international phone](https://free-public-api.herokuapp.com/country_phone_prefix_reverse/?value=49%2089%20123%20456%20789)
-1. [Get product title by EAN code](https://free-public-api.herokuapp.com/product_ean/?value=5030917291098&country=ES)
 1. [Get year percentage](https://free-public-api.herokuapp.com/year_percentage/)
 1. [Validate VIES](https://free-public-api.herokuapp.com/validate_vies/?value=LU20260743)
 1. [Validate DNI](https://free-public-api.herokuapp.com/validate_dni/?value=65839957L)
@@ -40,7 +39,7 @@ List of free simple APIs (* api key is required)
 1. [Validate credit card](https://free-public-api.herokuapp.com/validate_credit_card/?value=4242424242424242)
 1. [Get credit card type](https://free-public-api.herokuapp.com/credit_card_type/?value=4242424242424242)
 1. [Get International phone prefix](https://free-public-api.herokuapp.com/country_phone_prefix/?value=ES)
-1. [Get product title by EAN]()
+1. [Get product title by EAN code](https://free-public-api.herokuapp.com/product_ean/?value=5030917291098&country=ES)
 
 **Support this project**
 
