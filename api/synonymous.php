@@ -10,10 +10,12 @@ if (file_exists($src)) {
     $i = 0;
     $total = count($items);
     while (!$found && $i < $total) {
-        if ($found = stristr($items[$i], $value)) {
+        $items[$i] = ';' . $items[$i] . ';';
+        if ($found = (stristr($items[$i], ';' . $value . ';'))) {
             $result = $items[$i];
             $result = str_replace($value . ';', '', $result);
             $result = str_replace(';' . $value, '', $result);
+            $result = substr($result, 1, -1);
         }
         $i++;
     }
