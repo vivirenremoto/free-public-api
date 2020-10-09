@@ -19,26 +19,13 @@ List of free simple APIs (* api key is required)
 1. [Get keyword CPC from keyword surfer](https://free-public-api.herokuapp.com/seo_keyword_cpc/?value=vestidos+de+novia&country=es)
 1. [Get Pagespeed score *](https://free-public-api.herokuapp.com/pagespeed_score/?value=https://github.com/&device=mobile&key=)
 1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
-1. [Get genre by name](https://free-public-api.herokuapp.com/genre_name/?value=silvia)
-1. [Get credit card type](https://free-public-api.herokuapp.com/credit_card_type/?value=4242424242424242)
-1. [Get International phone prefix](https://free-public-api.herokuapp.com/country_phone_prefix/?value=ES)
-1. [Get product title by EAN code](https://free-public-api.herokuapp.com/product_title_ean/?value=5030917291098&country=ES)
-1. [Get synonymous](https://free-public-api.herokuapp.com/synonymous/?value=avi%C3%B3n&lang=es)
-1. [Get search volume from keyword surfer](https://free-public-api.herokuapp.com/seo_search_volume/?value=vestidos+de+novia&country=es)
-1. [Get keyword CPC from keyword surfer](https://free-public-api.herokuapp.com/seo_keyword_cpc/?value=vestidos+de+novia&country=es)
-1. [Get Pagespeed score *](https://free-public-api.herokuapp.com/pagespeed_score/?value=https://github.com/&device=mobile&key=)
-1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
-1. [Get genre by name](https://free-public-api.herokuapp.com/genre_name/?value=silvia)
-1. [Get credit card type](https://free-public-api.herokuapp.com/credit_card_type/?value=4242424242424242)
-1. [Get International phone prefix](https://free-public-api.herokuapp.com/country_phone_prefix/?value=ES)
-1. [Get search volume from keyword surfer](https://free-public-api.herokuapp.com/seo_search_volume/?value=vestidos+de+novia&country=es)
-1. [Get keyword CPC from keyword surfer](https://free-public-api.herokuapp.com/seo_keyword_cpc/?value=vestidos+de+novia&country=es)
-1. [Get Pagespeed score *](https://free-public-api.herokuapp.com/pagespeed_score/?value=https://github.com/&device=mobile&key=)
-1. [Get final redirection](https://free-public-api.herokuapp.com/final_redirect/?value=https://t.co/PAzsIQVNhg)
 1. [Get domain sitemap URL](https://free-public-api.herokuapp.com/domain_sitemap/?value=vivirenremoto.com)
 1. [Get genre by name](https://free-public-api.herokuapp.com/genre_name/?value=silvia)
 1. [Get credit card type](https://free-public-api.herokuapp.com/credit_card_type/?value=4242424242424242)
 1. [Get International phone prefix](https://free-public-api.herokuapp.com/country_phone_prefix/?value=ES)
+1. [Get synonymous](https://free-public-api.herokuapp.com/synonymous/?value=avi%C3%B3n&lang=es)
+1. [Get genre by name](https://free-public-api.herokuapp.com/genre_name/?value=silvia)
+1. [Get credit card type](https://free-public-api.herokuapp.com/credit_card_type/?value=4242424242424242)
 1. [Get product title by EAN code](https://free-public-api.herokuapp.com/product_title_ean/?value=5030917291098&country=ES)
 1. [Get product rating from amazon by ASIN](https://free-public-api.herokuapp.com/rating_amazon/?value=B07PHPXHQS&country=ES)
 1. [Get rating from metacritic](https://free-public-api.herokuapp.com/rating_metacritic/?value=crash+4&type=game)
@@ -78,13 +65,6 @@ List of free simple APIs (* api key is required)
 1. [Convert string to MD5](https://free-public-api.herokuapp.com/encode_md5/?value=string)
 1. [Convert string to Base64](https://free-public-api.herokuapp.com/encode_base64/?value=string)
 1. [Convert Base64 to string](https://free-public-api.herokuapp.com/decode_base64/?value=c3RyaW5n)
-
-**Upcoming**
-
-- Convert distance
-- Convert weight
-- Convert volume
-- Convert speed
 
 **Support this project**
 
