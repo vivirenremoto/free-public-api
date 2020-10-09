@@ -58,6 +58,8 @@ if (file_exists($path)) {
 
     } else {
 
+        header("Content-type: text/plain");
+
         // print as csv
         if (is_array($result)) {
 
