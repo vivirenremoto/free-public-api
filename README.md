@@ -59,6 +59,11 @@ List of free simple APIs (* api key is required)
 1. [Convert string to Base64](https://free-public-api.herokuapp.com/encode_base64/?value=string)
 1. [Convert Base64 to string](https://free-public-api.herokuapp.com/decode_base64/?value=c3RyaW5n)
 
+**Upcoming**
+- Get HTTP code status from URL
+- Validate IMEI code
+- Get Sitemap URL from domain
+
 **Support this project**
 
 - [Paypal](https://paypal.me/miquelcamps)
