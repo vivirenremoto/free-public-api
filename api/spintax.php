@@ -11,6 +11,7 @@ if (file_exists($path)) {
 
     $value_aux = str_replace(array(',', '.'), ' ', $value);
     $words_text = explode(' ', $value_aux);
+    $words_text = array_unique($words_text);
 
     foreach ($words_text as $word) {
         $word_aux = ';' . $word . ';';
