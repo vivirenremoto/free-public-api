@@ -10,7 +10,7 @@ $path = __DIR__ . '/sources/bad_words_' . $lang . '.txt';
 $result = $value;
 
 if (file_exists($path)) {
-    $words = explode("\r\n", file_get_contents($path));
+    $words = explode("\n", file_get_contents($path));
     rsort($words);
 
     foreach ($words as $word) {
