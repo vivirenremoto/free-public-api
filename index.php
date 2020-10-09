@@ -4,7 +4,7 @@ $request = $_SERVER['REQUEST_URI'];
 
 //////////////////////////
 
-if( strstr($request, '.test') ){
+if (strstr($request, '.test')) {
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
@@ -45,14 +45,50 @@ if (file_exists($path)) {
     if ($callback) {
         if (is_string($result) && !in_array($result, array('true', 'false'))) {
             $result = "'" . $result . "'";
+        } else if (is_array($result)) {
+            $result = json_encode($result);
         }
 
         echo $callback . "(" . $result . ")";
+
     } else if ($format == 'json') {
         header("Content-type: application/json");
         $data = array('result' => $result);
         echo json_encode($data);
+
     } else {
+
+        // print as csv
+        if (is_array($result)) {
+
+            $result = '';
+            $i = 0;
+            foreach ($items[0] as $key => $item) {
+                if ($i) {
+                    $result .= ';';
+                }
+
+                $result .= $key;
+                $i++;
+            }
+
+            foreach ($items as $key => $item) {
+
+                $result .= "\n";
+
+                $i = 0;
+                foreach ($item as $data) {
+                    if ($i) {
+                        $result .= ';';
+                    }
+
+                    $result .= $data;
+                    $i++;
+                }
+
+            }
+        }
+
         echo $result;
     }
 
