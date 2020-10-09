@@ -61,8 +61,13 @@ List of free simple APIs (* api key is required)
 
 **Upcoming**
 - Get HTTP code status from URL
-- Validate IMEI code
 - Get Sitemap URL from domain
+- Get flag image by country code
+- Convert distance
+- Convert weight
+- Convert volume
+- Convert speed
+- Validate IMEI
 
 **Support this project**
 
