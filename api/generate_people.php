@@ -3,6 +3,8 @@
 $limit = isset($_GET['limit']) ? (int) $_GET['limit'] : 1;
 if ($limit < 1) {
     $limit = 1;
+} else if ($limit > 1000) {
+    $limit = 1000;
 }
 
 require __DIR__ . '/generate_date.php';
