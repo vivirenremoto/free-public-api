@@ -4,6 +4,7 @@ List of free simple APIs (* api key is required)
 
 1. [Get age by birthdate](https://free-public-api.herokuapp.com/age/?value=1986-06-02)
 1. [Get days left by date](https://free-public-api.herokuapp.com/days_left/?value=2020-12-31)
+1. [Get days between two dates](https://free-public-api.herokuapp.com/days_between/?value=2020-10-01,2020-10-09)
 1. [Get your IP](https://free-public-api.herokuapp.com/ip/)
 1. [Get your user agent](https://free-public-api.herokuapp.com/user_agent/)
 1. [Get your country code](https://free-public-api.herokuapp.com/country/)
