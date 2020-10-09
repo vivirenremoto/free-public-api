@@ -75,8 +75,6 @@ List of free simple APIs (* api key is required)
 
 **Upcoming**
 
-- Detect if some text has any bad words
-- Detect if some text is positive or negative
 - Convert distance
 - Convert weight
 - Convert volume
