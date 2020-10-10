@@ -11,7 +11,7 @@ if ($from == $to) {
 
 } else {
     $url = 'https://api.exchangeratesapi.io/latest';
-    $json = file_get_contents($url);
+    $json = @file_get_contents($url);
     $output = json_decode($json);
 
     if (isset($output->date)) {

@@ -3,7 +3,7 @@
 $type = isset($_GET['type']) ? $_GET['type'] : 'all';
 
 $url = 'https://www.metacritic.com/search/all/' . urlencode($value) . '/results';
-$html = file_get_contents($url);
+$html = @file_get_contents($url);
 
 if (strstr($html, 'metascore_w')) {
 

@@ -5,7 +5,7 @@ if (!$key) {
 }
 
 $url = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' . $value . '&apikey=' . $key;
-$json = file_get_contents($url);
+$json = @file_get_contents($url);
 $output = json_decode($json);
 
 if (isset($output->{'Global Quote'}->{'05. price'})) {

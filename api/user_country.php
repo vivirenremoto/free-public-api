@@ -5,4 +5,4 @@
 require __DIR__ . '/ip.php';
 
 $url = 'http://api.hostip.info/country.php?ip=' . $result;
-$result = file_get_contents($url);
+$result = @file_get_contents($url);

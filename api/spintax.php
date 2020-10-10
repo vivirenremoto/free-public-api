@@ -7,7 +7,7 @@ $path = __DIR__ . '/sources/thesaurus_' . $lang . '.txt';
 $result = $value;
 
 if (file_exists($path)) {
-    $items = explode("\n", file_get_contents($path));
+    $items = explode("\n", @file_get_contents($path));
 
     $value_aux = str_replace(array(',', '.'), ' ', $value);
     $words_text = explode(' ', $value_aux);

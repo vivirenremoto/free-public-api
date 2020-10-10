@@ -55,7 +55,7 @@ class YouTubeDownloader
      */
     private function getVideoInfo()
     {
-        return file_get_contents("https://www.youtube.com/get_video_info?video_id=" . $this->extractVideoId($this->video_url) . "&cpn=CouQulsSRICzWn5E&eurl&el=adunit");
+        return @file_get_contents("https://www.youtube.com/get_video_info?video_id=" . $this->extractVideoId($this->video_url) . "&cpn=CouQulsSRICzWn5E&eurl&el=adunit");
     }
 
     /*

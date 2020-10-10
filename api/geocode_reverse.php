@@ -7,7 +7,7 @@ if (!$key) {
 }
 
 $url = 'https://maps.google.com/maps/api/geocode/json?latlng=' . urlencode($value) . '&key=' . $key;
-$geocode = file_get_contents($url);
+$geocode = @file_get_contents($url);
 
 $output = json_decode($geocode);
 

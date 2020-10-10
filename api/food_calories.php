@@ -1,7 +1,7 @@
 <?php
 
 $url = 'https://www.fatsecret.com/calories-nutrition/search?q=' . urlencode($value);
-$html = file_get_contents($url);
+$html = @file_get_contents($url);
 
 if (strstr($html, 'Calories: ')) {
 

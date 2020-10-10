@@ -1,7 +1,7 @@
 <?php
 
 $url = 'https://www.booking.com/searchresults.es.html?city=' . $value;
-$html = file_get_contents($url);
+$html = @file_get_contents($url);
 
 if (strstr($html, 'b_available_hotels:')) {
 

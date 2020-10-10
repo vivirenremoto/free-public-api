@@ -7,7 +7,7 @@ if (!$key) {
 $lang = isset($_GET['lang']) ? $_GET['lang'] : '';
 
 $url = 'https://api.dandelion.eu/datatxt/nex/v1?text=' . urlencode($value) . '&lang=' . $lang . '&token=' . $key;
-$json = file_get_contents($url);
+$json = @file_get_contents($url);
 $output = json_decode($json);
 
 if (isset($output->annotations[0])) {

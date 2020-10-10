@@ -24,7 +24,7 @@ $gender_names['male'] = $names;
 
 unset($names);
 
-$last_names = explode("\n", file_get_contents(__DIR__ . '/sources/last_names.txt'));
+$last_names = explode("\n", @file_get_contents(__DIR__ . '/sources/last_names.txt'));
 
 $genders = array('female', 'male');
 $email_providers = array('outlook.com', 'yahoo.com', 'gmail.com', 'hotmail.com', 'live.com', 'aol.com', 'icloud.com', 'mail.com', 'lycos.com');

@@ -5,7 +5,7 @@ $lang = isset($_GET['lang']) ? strtolower($_GET['lang']) : 'es';
 $src = __DIR__ . '/sources/thesaurus_' . $lang . '.txt';
 
 if (file_exists($src)) {
-    $items = explode("\n", file_get_contents($src));
+    $items = explode("\n", @file_get_contents($src));
     $found = false;
     $i = 0;
     $total = count($items);
