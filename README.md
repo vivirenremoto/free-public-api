@@ -78,6 +78,7 @@ List of free simple APIs (* api key is required)
 1. [Convert string to md5](https://free-public-api.herokuapp.com/encode_md5/?value=string)
 1. [Convert string to base64](https://free-public-api.herokuapp.com/encode_base64/?value=string)
 1. [Convert base64 to string](https://free-public-api.herokuapp.com/decode_base64/?value=c3RyaW5n)
+1. [Translate text using DeepL Pro *](https://free-public-api.herokuapp.com/translate/?value=hola&from=es&to=en&key=)
 
 **Support this project**
 

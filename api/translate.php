@@ -1,30 +1,41 @@
 <?php
 
+if (!$key) {
+    die('error - api key is required on https://www.deepl.com/pro');
+}
+
 $from = isset($_GET['from']) ? $_GET['from'] : false;
 $to = isset($_GET['to']) ? $_GET['to'] : false;
 
 if ($from && $to) {
 
-    $url = 'https://www.bing.com/ttranslatev3';
-
     $post = array(
-        'fromLang' => $from,
-        'to' => $to,
-        'text' => $value,
+        "auth_key" => $key,
+        "text" => $value,
+        "source_lang" => $from,
+        "target_lang" => $to,
     );
 
+    $url = "https://api.deepl.com/v2/translate";
+
     $curl = curl_init($url);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($post));
-    curl_setopt($curl, CURLOPT_REFERER, 'https://www.bing.com/translator');
-    curl_setopt($curl, CURLOPT_POST, 'POST');
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-    $data = curl_exec($curl);
+    curl_setopt_array($curl, array(
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => http_build_query($post),
+    ));
+
+    $response = curl_exec($curl);
     curl_close($curl);
 
-    $output = json_decode($data);
-    if (isset($output[0]->translations[0]->text)) {
-        $result = $output[0]->translations[0]->text;
-    }
+    $json = json_decode($response);
 
+    if (isset($json->translations[0])) {
+        $result = $json->translations[0]->text;
+
+    } else if (isset($json->message)) {
+        $result = "error - " . $json->message;
+
+    }
 }
