@@ -2,6 +2,8 @@
 
 $url = 'https://www.instagram.com/' . $value . '/?__a=1';
 
+echo $url . '----';
+
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
