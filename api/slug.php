@@ -2,6 +2,13 @@
 
 $stop_words = isset($_GET['stop_words']) ? $_GET['stop_words'] : false;
 $delimeter = isset($_GET['delimeter']) ? $_GET['delimeter'] : '-';
+$domain = isset($_GET['domain']) ? $_GET['domain'] : '';
+
+if ($domain) {
+    if (substr($domain, -1) != '/') {
+        $domain .= '/';
+    }
+}
 
 function url_title($str, $delimiter = '-', $stop_words = true)
 {
@@ -20,4 +27,4 @@ function url_title($str, $delimiter = '-', $stop_words = true)
     return $clean;
 }
 
-$result = url_title($value, $delimeter, $stop_words);
+$result = $domain . url_title($value, $delimeter, $stop_words);
