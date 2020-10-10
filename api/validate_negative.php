@@ -5,7 +5,7 @@
 
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
 
-$path = __DIR__ . '/sources/negative_' . $lang . '.txt';
+$path = __DIR__ . '/sources/negative_words_' . $lang . '.txt';
 
 if (file_exists($path)) {
     $words = explode("\n", @file_get_contents($path));
