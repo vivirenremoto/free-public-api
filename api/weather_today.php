@@ -1,5 +1,7 @@
 <?php
 
+// https://openweathermap.org/api/one-call-api
+
 if (!$key) {
     die('error - api key is required https://openweathermap.org/');
 }
