@@ -43,7 +43,7 @@ List of free simple APIs (* api key is required)
 1. [Get total subs from youtube channel](https://free-public-api.herokuapp.com/followers_youtube/?value=UC5ABuhKL2CIfTf54qTnTUhQ&key=)
 1. [Get total followers from twitter account](https://free-public-api.herokuapp.com/followers_twitter/?value=vivirenremoto)
 1. [Get total hotels from a city on booking](https://free-public-api.herokuapp.com/total_booking_hotels_city/?value=-390625)
-
+1. [Get spam score](https://free-public-api.herokuapp.com/spam_score/?value=esto+es+viagra&lang=es)
 1. [Validate VIES](https://free-public-api.herokuapp.com/validate_vies/?value=LU20260743)
 1. [Validate DNI](https://free-public-api.herokuapp.com/validate_dni/?value=65839957L)
 1. [Validate NIF](https://free-public-api.herokuapp.com/validate_nif/?value=65839957L)

@@ -11,7 +11,8 @@ $path = __DIR__ . '/sources/positive_words_' . $lang . '.txt';
 
 if (file_exists($path)) {
 
-    $words = str_replace(array(',', '-', '_', '.', '?', '¿'), ' ', $value);
+    $words = str_replace(array(',', '-', '_', '.', '?', '¿', ':'), ' ', $value);
+    $words = strtolower($words);
     $words = explode(' ', $words);
     $words = array_unique($words);
 
