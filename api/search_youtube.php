@@ -4,7 +4,7 @@
 // https://developers.google.com/youtube/v3/docs/search/list
 
 if (!$key) {
-    die('error - api key (youtube data) and valid billing account are required on https://console.cloud.google.com/apis/');
+    throw new Exception('api key (youtube data) and valid billing account are required on https://console.cloud.google.com/apis/');
 }
 
 $limit = 1;

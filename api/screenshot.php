@@ -3,7 +3,7 @@
 // https://developers.google.com/speed/docs/insights/v5/reference/pagespeedapi/runpagespeed
 
 if (!$key) {
-    die('error - api key (pagespeed insights) and valid billing account are required on https://console.cloud.google.com/apis/');
+    throw new Exception('api key (pagespeed insights) and valid billing account are required on https://console.cloud.google.com/apis/');
 }
 
 $device = isset($_GET['device']) ? $_GET['device'] : 'desktop';

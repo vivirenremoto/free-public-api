@@ -1,7 +1,7 @@
 <?php
 
 if (!$key) {
-    die('error - api key is required https://dandelion.eu/docs/api/datatxt/nex/getting-started/');
+    throw new Exception('api key is required https://dandelion.eu/docs/api/datatxt/nex/getting-started/');
 }
 
 $lang = isset($_GET['lang']) ? $_GET['lang'] : '';

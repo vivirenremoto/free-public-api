@@ -1,7 +1,7 @@
 <?php
 
 if (!$key) {
-    die('error - api key is required https://www.alphavantage.co/support/');
+    throw new Exception('api key is required https://www.alphavantage.co/support/');
 }
 
 $url = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' . $value . '&apikey=' . $key;

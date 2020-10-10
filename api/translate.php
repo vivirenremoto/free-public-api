@@ -1,7 +1,7 @@
 <?php
 
 if (!$key) {
-    die('error - api key is required on https://www.deepl.com/pro');
+    throw new Exception('api key is required on https://www.deepl.com/pro');
 }
 
 $from = isset($_GET['from']) ? $_GET['from'] : false;

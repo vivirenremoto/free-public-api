@@ -3,7 +3,7 @@
 // https://openweathermap.org/api/one-call-api
 
 if (!$key) {
-    die('error - api key is required https://openweathermap.org/');
+    throw new Exception('api key is required https://openweathermap.org/');
 }
 
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';

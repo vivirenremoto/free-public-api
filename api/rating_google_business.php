@@ -4,7 +4,7 @@
 // docs https://developers.google.com/places/web-service/details
 
 if (!$key) {
-    die('error - api key (geocoding) and valid billing account are required on https://console.cloud.google.com/apis/');
+    throw new Exception('api key (geocoding) and valid billing account are required on https://console.cloud.google.com/apis/');
 }
 
 $url = 'https://maps.googleapis.com/maps/api/place/details/json?place_id=' . $value . '&key=' . $key;

@@ -1,7 +1,7 @@
 <?php
 
 if (!$key) {
-    die('error - api key is required on https://pixabay.com/api/docs/');
+    throw new Exception('api key is required on https://pixabay.com/api/docs/');
 }
 
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';

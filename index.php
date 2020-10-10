@@ -26,7 +26,27 @@ $result = false;
 $path = __DIR__ . '/api/' . $action . '.php';
 
 if (file_exists($path)) {
-    require $path;
+
+    try {
+        require $path;
+    } catch (Exception $e) {
+
+        http_response_code(400);
+
+        if ($format == 'json') {
+            header("Content-type: application/json");
+            $data = array(
+                'error' => $e->getMessage(),
+            );
+            echo json_encode($data);
+        } else {
+
+            header("Content-type: text/plain");
+
+            echo $e->getMessage();
+        }
+        exit();
+    }
 
     if (is_bool($result) && $result == false) {
         $result = $default;
