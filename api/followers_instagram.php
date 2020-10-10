@@ -1,15 +1,9 @@
 <?php
 
+// instagram blocks my ip this doesnt work anymore
+
 $url = 'https://www.instagram.com/' . $value . '/?__a=1';
-
-echo $url . '----';
-
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-echo $json = curl_exec($ch);
-curl_close($ch);
-
+$json = @file_get_contents($url);
 $output = json_decode($json);
 
 if (isset($output->graphql->user->edge_followed_by->count)) {
