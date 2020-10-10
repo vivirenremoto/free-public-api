@@ -4,7 +4,7 @@ $request = $_SERVER['REQUEST_URI'];
 
 //////////////////////////
 
-if (strstr($request, '.test')) {
+if (strstr($request, '.test' || isset($_GET['test']))) {
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
