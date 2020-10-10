@@ -1,15 +1,9 @@
 <?php
 
-$url = 'https://www.instagram.com/' . $value . '/';
-$html = file_get_contents($url);
+$url = 'https://www.instagram.com/' . $value . '/?__a=1';
+$json = @file_get_contents($url);
+$output = json_decode($json);
 
-if (strstr($html, 'FollowAction')) {
-    $pattern = '/FollowAction","userInteractionCount":"([0-9]*)"/';
-
-    preg_match($pattern, $html, $matches);
-
-    if (isset($matches[1])) {
-        $result = $matches[1];
-    }
-
+if (isset($output->graphql->user->edge_followed_by->count)) {
+    $result = $output->graphql->user->edge_followed_by->count;
 }
