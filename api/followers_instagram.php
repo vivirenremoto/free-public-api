@@ -1,9 +1,15 @@
 <?php
 
 $url = 'https://www.instagram.com/' . $value . '/';
+$html = file_get_contents($url);
 
-$tags = @get_meta_tags($url);
+if (strstr($html, 'FollowAction')) {
+    $pattern = '/FollowAction","userInteractionCount":"([0-9]*)"/';
 
-if (strstr($tags['description'], '@' . $value)) {
-    $result = current(explode(' ', $tags['description']));
+    preg_match($pattern, $html, $matches);
+
+    if (isset($matches[1])) {
+        $result = $matches[1];
+    }
+
 }
