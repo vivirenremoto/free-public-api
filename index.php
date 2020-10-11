@@ -39,6 +39,7 @@ if (file_exists($path)) {
         if ($format == 'json') {
             header("Content-type: application/json");
             $data = array(
+                'status' => 400,
                 'error' => $e->getMessage(),
             );
             echo json_encode($data);
@@ -76,7 +77,10 @@ if (file_exists($path)) {
 
     } else if ($format == 'json') {
         header("Content-type: application/json");
-        $data = array('result' => $result);
+        $data = array(
+            'status' => 200,
+            'result' => $result,
+        );
         echo json_encode($data);
 
     } else {
