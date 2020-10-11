@@ -7,7 +7,7 @@ if (strstr($value, '@')) {
     $domain = end($t_email);
 
     $path = __DIR__ . '/sources/temporary_mail_providers.txt';
-    $items = explode("\r\n", file_get_contents($path));
+    $items = explode("\n", file_get_contents($path));
 
     $result = in_array($domain, $items);
 }
