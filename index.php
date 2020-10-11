@@ -22,6 +22,7 @@ $value = isset($_GET['value']) ? $_GET['value'] : null;
 $callback = isset($_GET['callback']) ? $_GET['callback'] : null;
 $format = isset($_GET['format']) ? $_GET['format'] : 'text';
 $key = isset($_GET['key']) ? $_GET['key'] : null;
+$secret = isset($_GET['secret']) ? $_GET['secret'] : null;
 $default = isset($_GET['default']) ? $_GET['default'] : false;
 $result = false;
 
