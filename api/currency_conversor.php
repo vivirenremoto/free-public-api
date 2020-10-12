@@ -15,7 +15,10 @@ if ($from == $to) {
     $output = json_decode($json);
 
     if (isset($output->date)) {
-        if (in_array('EUR', array($from, $to)) || (isset($output->rates->{$from}) && isset($output->rates->{$to}))) {
+
+        $output->rates->{'EUR'} = 1;
+
+        if (isset($output->rates->{$from}) && isset($output->rates->{$to})) {
             if ($from == 'EUR') {
                 $from_value = 1;
                 $to_value = $output->rates->{$to};
