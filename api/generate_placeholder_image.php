@@ -41,6 +41,10 @@ if (strstr($value, 'x')) {
     imagepng($im);
     imagedestroy($im);
 
-    exit();
+} else {
 
+    header("Content-type: image/png");
+    readfile(__DIR__ . '/sources/blank_pixel.png');
 }
+
+exit();
