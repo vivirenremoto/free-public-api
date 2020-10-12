@@ -2,13 +2,15 @@
 
 // https://www.flaticon.com/packs/countrys-flags?k=1602249208360
 
+header("Content-type: image/png");
+
 $path = __DIR__ . '/sources/flags/' . $value . '.png';
 if (file_exists($path)) {
-    header("Content-type: image/png");
     readfile($path);
 
 } else {
-    header("HTTP/1.0 404 Not Found");
+    http_response_code(404);
+    readfile(__DIR__ . '/sources/blank_pixel.png');
 }
 
 exit();
