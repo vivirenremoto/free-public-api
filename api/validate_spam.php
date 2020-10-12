@@ -15,5 +15,5 @@ if (file_exists($path)) {
         $i++;
     }
 
-    $result = !$found;
+    $result = $found;
 }
