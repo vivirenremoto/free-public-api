@@ -66,7 +66,7 @@ api key is required *
 1. [Get total hotels in a city on booking](https://free-public-api.herokuapp.com/total_booking_hotels_city/?value=-390625)
 1. [Get total saves on pinterest](https://free-public-api.herokuapp.com/likes_pinterest/?value=http://www.ejerciciosinglesonline.com/new-exercises/ex1-tiempos-verbales/)
 1. [Get total likes on tiktok](https://free-public-api.herokuapp.com/likes_tiktok/?value=campamentoweb/video/6853057224533691654)
-1. [Get total rating on android google play](https://free-public-api.herokuapp.com/app_android_rating/?value=com.whatsappp)
+1. [Get total rating on android google play](https://free-public-api.herokuapp.com/app_android_rating/?value=com.whatsapp)
 1. [Get total reviews on android google play](https://free-public-api.herokuapp.com/app_android_reviews/?value=com.whatsapp)
 1. [Get total downloads on android google play](https://free-public-api.herokuapp.com/app_android_downloads/?value=com.whatsapp)
 1. [Get total rating on ios app store](https://free-public-api.herokuapp.com/app_ios_rating/?value=whatsapp-messenger/id310633997)
