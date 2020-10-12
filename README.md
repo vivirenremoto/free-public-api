@@ -143,7 +143,7 @@ printAge(34)
 
 Error callback - missing api key
 
-https://free-public-api.herokuapp.com/followers_youtube/?value=UC5ABuhKL2CIfTf54qTnTUhQ&key=
+https://free-public-api.herokuapp.com/followers_youtube/?value=UC5ABuhKL2CIfTf54qTnTUhQ&key=&format=json
 
 ```
 {
