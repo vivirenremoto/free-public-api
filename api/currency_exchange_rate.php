@@ -2,7 +2,7 @@
 
 // https://exchangeratesapi.io/
 
-$amount = isset($_GET['amount']) ? strtoupper($_GET['amount']) : false;
+$amount = 1;
 $precision = isset($_GET['precision']) ? $_GET['precision'] : false;
 
 if (strstr($value, '-') && is_numeric($amount)) {
