@@ -122,6 +122,20 @@ if (file_exists($path)) {
     }
 
 } else {
-    $url = 'https://github.com/vivirenremoto/free-public-api';
-    header("Location: " . $url);
+
+    http_response_code(404);
+
+    if ($format == 'json') {
+        header("Content-type: application/json");
+        $data = array(
+            'status' => 404,
+            'error' => 'page not found',
+        );
+        echo json_encode($data);
+
+    } else {
+        header("Content-type: text/plain");
+        echo 'error 404 - page not found';
+    }
+
 }

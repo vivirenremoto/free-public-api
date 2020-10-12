@@ -125,7 +125,10 @@ JSON format
 [https://free-public-api.herokuapp.com/age/?value=1986-06-02&format=json](https://free-public-api.herokuapp.com/age/?value=1986-06-02&format=json)
 
 ```
-{"result":34}
+{
+    "status":200,
+    "result":34
+}
 ```
 
 Javascript callback
@@ -136,7 +139,19 @@ https://free-public-api.herokuapp.com/age/?value=1986-06-02&callback=printAge
 printAge(34)
 ```
 
+Error callback - missing api key
+
+https://free-public-api.herokuapp.com/followers_youtube/?value=UC5ABuhKL2CIfTf54qTnTUhQ&key=
+
+```
+{
+    "status":400,
+    "error":"api key (youtube data) and valid billing account are required on https://console.cloud.google.com/apis/"
+}
+```
+
 **Using an API on Google Spreadsheets**
+
 ```
 =IMPORTDATA("https://free-public-api.herokuapp.com/age/?value=1986-06-02")
 ```
