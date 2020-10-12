@@ -6,7 +6,7 @@ A bunch of APIs to solve small problems
 
 [Paypal](https://paypal.me/miquelcamps)
 
-**List**
+**API Methods**
 
 api key is required *
 
