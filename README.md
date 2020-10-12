@@ -8,7 +8,7 @@ A bunch of APIs to solve small problems
 
 **List**
 
-* api key is required
+api key is required *
 
 1. [Get age by birthdate](https://free-public-api.herokuapp.com/age/?value=1986-06-02)
 1. [Get days left by date](https://free-public-api.herokuapp.com/days_left/?value=2020-12-31)
