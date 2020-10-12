@@ -160,7 +160,7 @@ https://free-public-api.herokuapp.com/followers_youtube/?value=UC5ABuhKL2CIfTf54
 }
 ```
 
-**Using an API on Google Spreadsheets**
+**Using a method on Google Spreadsheets**
 
 ```
 =IMPORTDATA("https://free-public-api.herokuapp.com/age/?value=1986-06-02")
