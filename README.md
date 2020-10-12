@@ -160,3 +160,7 @@ https://free-public-api.herokuapp.com/followers_youtube/?value=UC5ABuhKL2CIfTf54
 ```
 =IMPORTDATA("https://free-public-api.herokuapp.com/age/?value=1986-06-02")
 ```
+
+**Disclaimer**
+
+Any method can be changed or renamed in any time, so I dont recomended to use this for production purposes.
