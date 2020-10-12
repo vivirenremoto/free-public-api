@@ -1,6 +1,14 @@
 # free-public-api
  
-List of free simple APIs (* api key is required)
+A bunch of APIs to solve small problems 
+
+**Support this project**
+
+- [Paypal](https://paypal.me/miquelcamps)
+
+**List**
+
+* == api key is required
 
 1. [Get age by birthdate](https://free-public-api.herokuapp.com/age/?value=1986-06-02)
 1. [Get days left by date](https://free-public-api.herokuapp.com/days_left/?value=2020-12-31)
@@ -111,10 +119,6 @@ List of free simple APIs (* api key is required)
 1. [Convert string to base64](https://free-public-api.herokuapp.com/encode_base64/?value=string)
 1. [Convert base64 to string](https://free-public-api.herokuapp.com/decode_base64/?value=c3RyaW5n)
 1. [Translate text using DeepL Pro *](https://free-public-api.herokuapp.com/translate/?value=hola&from=es&to=en&key=)
-
-**Support this project**
-
-- [Paypal](https://paypal.me/miquelcamps)
 
 **GET Parameters**
 
