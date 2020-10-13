@@ -41,7 +41,7 @@ function showModal(obj) {
                 } else if (attr[0] == 'secret' && api) {
                     attr[1] = '<a href="' + api + '" target="_blank">Get API key</a>';
                 }
-                $('#params tbody').append('<tr><td>' + attr[0] + '</td><td>' + attr[1] + '</td></tr>');
+                $('#params tbody').append('<tr><td width="50%">' + attr[0] + '</td><td width="50%">' + attr[1] + '</td></tr>');
             }
         }
     } else {
