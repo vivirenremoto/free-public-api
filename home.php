@@ -29,7 +29,7 @@
                     <a href="#validate" class="btn btn-secondary my-2 btn_filter">Validate</a>
                     <a href="#generate" class="btn btn-secondary my-2 btn_filter">Generate</a>
                     <a href="#multimedia" class="btn btn-secondary my-2 btn_filter">Multimedia</a>
-                    <a href="#map" class="btn btn-secondary my-2 btn_filter">Maps</a>
+                    <a href="#location" class="btn btn-secondary my-2 btn_filter">Location</a>
                     <a href="#currency" class="btn btn-secondary my-2 btn_filter">Currency</a>
                     <a href="#apps" class="btn btn-secondary my-2 btn_filter">Apps</a>
                     <a href="#seo" class="btn btn-secondary my-2 btn_filter">SEO</a>
