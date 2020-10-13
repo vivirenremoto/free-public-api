@@ -56,6 +56,8 @@ function showModal(obj) {
 $(function () {
     $('.btn_filter').click(function () {
 
+        $('#search').val('');
+
         $('.btn_filter').removeClass('btn-primary').addClass('btn-secondary');
         $(this).addClass('btn-primary').removeClass('btn-secondary');
 
