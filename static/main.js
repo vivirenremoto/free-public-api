@@ -71,6 +71,8 @@ $(function () {
             $('.category').show();
         }
 
+        return false;
+
     });
 
     $('#search').keyup(function () {
