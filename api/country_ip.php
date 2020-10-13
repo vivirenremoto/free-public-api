@@ -4,3 +4,7 @@
 
 $url = 'http://api.hostip.info/country.php?ip=' . $value;
 $result = @file_get_contents($url);
+
+if ($result == "XX") {
+    $result = false;
+}
