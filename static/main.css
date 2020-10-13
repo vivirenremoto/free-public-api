@@ -120,6 +120,8 @@
 }
 
 #github{position:absolute;right:0;top:0;}
+#github img{width:120px;}
+
 @media only screen and (max-width: 480px){
     #github img{width:80px;}
 
