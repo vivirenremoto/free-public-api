@@ -8,8 +8,6 @@ A bunch of APIs to solve small problems
 
 **API Methods**
 
-api key is required *
-
 [https://free-public-api.herokuapp.com/](https://free-public-api.herokuapp.com/)
 
 **GET Parameters**
