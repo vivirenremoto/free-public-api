@@ -1,0 +1,129 @@
+#search {
+    display: block;
+    border: 3px black solid;
+    border-radius: 50px;
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#fullTable{padding:0 30px;}
+
+.card {
+    background: red;
+    border: 0;
+    height: 240px;
+}
+
+#params{
+    margin-bottom:-30px;
+}
+
+.category {
+    cursor: pointer;
+}
+
+.category_icon{
+    height:160px;
+}
+
+.category_generate .card {
+    background: black;
+}
+
+.category_generate .card .category_icon {
+    background: url('img/generate.png') no-repeat center center;
+    font-size: 220px;
+}
+
+
+.category_validate .card {
+    background: #538d22;
+}
+
+.category_validate .card .category_icon {
+    background: url('img/validate.png') no-repeat center center;
+    font-size: 220px;
+}
+
+
+.category_multimedia .card {
+    background: #560bad;
+}
+
+.category_multimedia .card .category_icon {
+    background: url('img/multimedia.png') no-repeat center center;
+    font-size: 220px;
+}
+
+
+.category_user .card {
+    background: #f75c03;
+}
+
+.category_user .card .category_icon {
+    background: url('img/user.png') no-repeat center center;
+    font-size: 220px;
+}
+
+
+.category_map .card {
+    background: #da2c38;
+}
+
+.category_map .card .category_icon {
+    background: url('img/map.png') no-repeat center center;
+    font-size: 220px;
+}
+
+
+.category_currency .card {
+    background: #f2af29;
+}
+
+.category_currency .card .category_icon {
+    background: url('img/currency.png') no-repeat center center;
+    font-size: 220px;
+}
+
+
+.category_apps .card {
+    background: #0ead69;
+}
+
+.category_apps .card .category_icon {
+    background: url('img/apps.png') no-repeat center center;
+    font-size: 220px;
+}
+
+
+.category_seo .card {
+    background: #00b4d8;
+}
+
+.category_seo .card .category_icon {
+    background: url('img/seo.png') no-repeat center center;
+    font-size: 220px;
+}
+
+
+.category_search .card {
+    background: #2667ff;
+}
+
+.category_search .card .category_icon {
+    background: url('img/search.png') no-repeat center center;
+    font-size: 220px;
+}
+
+#github{position:absolute;right:0;top:0;}
+@media only screen and (max-width: 480px){
+    #github img{width:80px;}
+
+    #filters{overflow-x:scroll;margin-left:-30px;margin-right:-30px;}
+
+    #scroll{width:715px;height:65px;}
+}
