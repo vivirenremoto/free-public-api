@@ -8,6 +8,11 @@
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
+    outline: n;
+}
+
+input:focus{
+    outline: none;
 }
 
 #fullTable{padding:0 30px;}
