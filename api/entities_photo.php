@@ -1,5 +1,7 @@
 <?php
 
+$secret = isset($_GET['secret']) ? $_GET['secret'] : null;
+
 if (!$key || !$secret) {
     throw new Exception('api key and secret are required on https://imagga.com/');
 }

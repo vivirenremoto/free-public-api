@@ -45,6 +45,8 @@ function showModal(obj) {
                 $('#params tbody').append('<tr><td width="50%">' + attr[0] + '</td><td width="50%">' + attr[1] + '</td></tr>');
             }
 
+            $('#params tbody').append('<tr><td width="50%">default</td><td width="50%">optional value if result is false</td></tr>');
+
             if (format == 'json') {
                 $('#params tbody').append('<tr><td width="50%">format</td><td width="50%">[ text | json ]</td></tr>');
                 $('#params tbody').append('<tr><td width="50%">callback</td><td width="50%">optional</td></tr>');

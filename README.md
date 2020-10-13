@@ -14,11 +14,11 @@ api key is required *
 
 **GET Parameters**
 
-- format [json|text], default text
-- value, default null
-- callback, default null
+- input, default null
 - key (if is required, /geocode/ requires a google maps api key)
 - default, default value false
+- format [json|text], default text
+- callback, default null
 
 **Response**
 
