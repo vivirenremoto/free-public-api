@@ -35,6 +35,10 @@ input:focus{
     cursor: pointer;
 }
 
+.category:hover {
+    opacity:0.8;
+}
+
 .category_icon{
     height:160px;
 }
