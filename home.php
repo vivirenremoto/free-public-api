@@ -25,15 +25,15 @@
 
             <div id="filters">
                 <div id="scroll">
-                    <a href="#" class="btn btn-primary my-2 btn_filter" data-type="">All</a>
-                    <a href="#" class="btn btn-secondary my-2 btn_filter" data-type="validate">Validate</a>
-                    <a href="#" class="btn btn-secondary my-2 btn_filter" data-type="generate">Generate</a>
-                    <a href="#" class="btn btn-secondary my-2 btn_filter" data-type="multimedia">Multimedia</a>
-                    <a href="#" class="btn btn-secondary my-2 btn_filter" data-type="map">Maps</a>
-                    <a href="#" class="btn btn-secondary my-2 btn_filter" data-type="currency">Currency</a>
-                    <a href="#" class="btn btn-secondary my-2 btn_filter" data-type="apps">Apps</a>
-                    <a href="#" class="btn btn-secondary my-2 btn_filter" data-type="seo">SEO</a>
-                    <a href="#" class="btn btn-secondary my-2 btn_filter" data-type="user">User</a>
+                    <a href="#" class="btn btn-primary my-2 btn_filter">All</a>
+                    <a href="#validate" class="btn btn-secondary my-2 btn_filter">Validate</a>
+                    <a href="#generate" class="btn btn-secondary my-2 btn_filter">Generate</a>
+                    <a href="#multimedia" class="btn btn-secondary my-2 btn_filter">Multimedia</a>
+                    <a href="#map" class="btn btn-secondary my-2 btn_filter">Maps</a>
+                    <a href="#currency" class="btn btn-secondary my-2 btn_filter">Currency</a>
+                    <a href="#apps" class="btn btn-secondary my-2 btn_filter">Apps</a>
+                    <a href="#seo" class="btn btn-secondary my-2 btn_filter">SEO</a>
+                    <a href="#user" class="btn btn-secondary my-2 btn_filter">User</a>
                 </div>
             </div>
 
@@ -115,7 +115,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <script src="static/main.js?v=2"></script>
+    <script src="static/main.js?v=3"></script>
 </body>
 
 </html>

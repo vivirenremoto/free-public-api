@@ -11,8 +11,13 @@ function showInfo(data) {
         "tableDiv": "#fullTable",
         "filterDiv": "#fullTableFilter"
     }
-    Sheetsee.makeTable(tableOptions)
-    Sheetsee.initiateTableFilter(tableOptions)
+    Sheetsee.makeTable(tableOptions);
+    Sheetsee.initiateTableFilter(tableOptions);
+
+
+    if (document.location.hash) {
+        $('.btn_filter[href$=' + document.location.hash.replace('#', '') + ']').click();
+    }
 }
 
 function showModal(obj) {
@@ -70,7 +75,7 @@ $(function () {
         $('.btn_filter').removeClass('btn-primary').addClass('btn-secondary');
         $(this).addClass('btn-primary').removeClass('btn-secondary');
 
-        var category = $(this).data('type');
+        var category = $(this).attr('href').replace('#', '');
 
         if (category) {
             $('.category').hide();
@@ -79,9 +84,6 @@ $(function () {
         } else {
             $('.category').show();
         }
-
-        return false;
-
     });
 
     $('#search').keyup(function () {
