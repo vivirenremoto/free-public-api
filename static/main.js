@@ -32,7 +32,7 @@ function showModal(obj) {
 
     var t_url = url.split('?');
 
-    if (t_url.length == 2) {
+    if (t_url.length > 1) {
         t_url = t_url[1].split('&');
 
 
@@ -47,13 +47,13 @@ function showModal(obj) {
                 } else if (attr[0] == 'secret' && api) {
                     attr[1] = '<a href="' + api + '" target="_blank">Get API key</a>';
                 }
-                $('#params tbody').append('<tr><td width="50%">' + attr[0] + '</td><td width="50%">' + attr[1] + '</td></tr>');
+                $('#params tbody').append('<tr><td width="25%">' + attr[0] + '</td><td width="75%">' + decodeURIComponent(attr[1]) + '</td></tr>');
             }
 
             if (format == 'json') {
-                $('#params tbody').append('<tr><td width="50%">default</td><td width="50%">optional value if result is false</td></tr>');
-                $('#params tbody').append('<tr><td width="50%">format</td><td width="50%">[ text | json ]</td></tr>');
-                $('#params tbody').append('<tr><td width="50%">callback</td><td width="50%">optional</td></tr>');
+                $('#params tbody').append('<tr><td width="25%">default</td><td width="75%">optional value if result is false</td></tr>');
+                $('#params tbody').append('<tr><td width="25%">format</td><td width="75%">[ text | json ]</td></tr>');
+                $('#params tbody').append('<tr><td width="25%">callback</td><td width="75%">optional</td></tr>');
             }
 
         }
