@@ -32,7 +32,7 @@ function showModal(obj) {
 
         if (t_url) {
             $('#params').show();
-            //$('#params tbody').html('<tr><td>Name</td><td>Value</td></tr>');
+            $('#params tbody').html('');
             for (var i = 0; i < t_url.length; i++) {
                 var attr = t_url[i].split('=');
 
