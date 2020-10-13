@@ -141,6 +141,10 @@ input:focus{
     #filters{overflow-x:scroll;margin-left:-30px;margin-right:-30px;}
 
     #scroll{width:715px;height:65px;}
+
+    .jumbotron {
+        padding: 1rem 1rem;
+    }
 }
 
 @media only screen and (min-width: 800px){
