@@ -8,7 +8,7 @@
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
-    outline: n;
+    outline: none;
 }
 
 input:focus{
@@ -75,12 +75,12 @@ input:focus{
 }
 
 
-.category_map .card {
+.category_location .card {
     background: #da2c38;
 }
 
-.category_map .card .category_icon {
-    background: url('img/map.png') no-repeat center center;
+.category_location .card .category_icon {
+    background: url('img/location.png') no-repeat center center;
     font-size: 220px;
 }
 
