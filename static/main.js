@@ -18,7 +18,8 @@ function showInfo(data) {
 function showModal(obj) {
     var title = $(obj).data('title').split(' - ')[1];
     var url = $(obj).data('url');
-    var api = $(obj).data('api');
+    var api = $(obj).data('format');
+    var format = $(obj).data('format');
 
     $('#ModalLabel').html(title);
     $('#full_url').val(url);
@@ -43,6 +44,12 @@ function showModal(obj) {
                 }
                 $('#params tbody').append('<tr><td width="50%">' + attr[0] + '</td><td width="50%">' + attr[1] + '</td></tr>');
             }
+
+            if (format == 'json') {
+                $('#params tbody').append('<tr><td width="50%">format</td><td width="50%">[ text | json ]</td></tr>');
+                $('#params tbody').append('<tr><td width="50%">callback</td><td width="50%">optional</td></tr>');
+            }
+
         }
     } else {
         $('#params').hide();

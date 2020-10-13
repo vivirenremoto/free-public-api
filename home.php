@@ -14,7 +14,8 @@
 
 <body>
 
-<a href="https://github.com/vivirenremoto/free-public-api" target="_blank" id="github"><img src="static/img/github_badge.png"></a>
+    <a href="https://github.com/vivirenremoto/free-public-api" target="_blank" id="github"><img
+            src="static/img/github_badge.png"></a>
 
     <section class="jumbotron text-center">
         <div class="container">
@@ -87,11 +88,11 @@
       <div class="row">
           {{#rows}}
 
-          <div class="col-md-3 category category_{{categoria}}" data-title="{{categoria}} - {{titulo}}" data-url="{{url}}" data-api="{{api}}" onclick="showModal(this)">
+          <div class="col-md-3 category category_{{category}}" data-format="{{format}}" data-title="{{category}} - {{title}}" data-url="{{url}}" data-api="{{api}}" data-format="{{format}}" onclick="showModal(this)">
             <div class="card text-white mb-4 shadow-sm">
                 <div class="bd-placeholder-img card-img-top text-center category_icon"></div>
                 <div class="card-body" style="padding-top:0;">
-                <h5 class="card-title" style="text-align:center;font-weight:bold;">{{titulo}}</h5>
+                <h5 class="card-title" style="text-align:center;font-weight:bold;">{{title}}</h5>
               </div>
 
             </div>
