@@ -142,3 +142,22 @@ input:focus{
 
     #scroll{width:715px;height:65px;}
 }
+
+@media only screen and (min-width: 800px){
+    .jumbotron{
+        padding:2rem 2rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    body{
+        padding-top:300px;
+    }
+
+    #github{
+        position:fixed;z-index: 2;
+    }
+}
