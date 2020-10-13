@@ -115,7 +115,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <script src="static/main.js?v=3"></script>
+    <script src="static/main.js?v=4"></script>
 </body>
 
 </html>
