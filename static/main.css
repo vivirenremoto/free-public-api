@@ -11,6 +11,10 @@
     outline: none;
 }
 
+.modal-dialog{
+    overflow-x:hidden;
+}
+
 input:focus{
     outline: none;
 }

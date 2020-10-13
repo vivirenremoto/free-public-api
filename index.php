@@ -149,7 +149,7 @@ if (file_exists($path)) {
         //http_response_code(301);
         //$url = 'https://github.com/vivirenremoto/free-public-api';
         //header('Location: ' . $url);
-        require __DIR__ . '/home.php';
+        require __DIR__ . '/home.html';
 
     }
 
