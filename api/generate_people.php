@@ -30,6 +30,15 @@ $genders = array('female', 'male');
 $email_providers = array('outlook.com', 'yahoo.com', 'gmail.com', 'hotmail.com', 'live.com', 'aol.com', 'icloud.com', 'mail.com', 'lycos.com');
 $separators = array('.', '_', '');
 
+$faces = array();
+$gender = 'female';
+$path = __DIR__ . '/sources/faces/' . $gender . '/';
+$faces[$gender] = glob($path . '*.jpg');
+
+$gender = 'male';
+$path = __DIR__ . '/sources/faces/' . $gender . '/';
+$faces[$gender] = glob($path . '*.jpg');
+
 $items = array();
 
 for ($i = 0; $i < $limit; $i++) {
@@ -38,6 +47,8 @@ for ($i = 0; $i < $limit; $i++) {
     shuffle($genders);
     shuffle($last_names);
     $gender = $genders[0];
+
+    shuffle($faces[$gender]);
 
     shuffle($gender_names[$gender]);
     $name = $gender_names[$gender][0];
@@ -52,6 +63,8 @@ for ($i = 0; $i < $limit; $i++) {
     $email = str_replace('ñ', 'n', $email);
     $email .= rand(1, 1000) . '@' . $email_providers[0];
 
+    $photo = 'https://free-public-api.herokuapp.com/api/sources/faces/' . $gender . '/' . basename($faces[$gender][0]);
+
     $data = array();
     $data['first_name'] = $name;
     $data['last_name'] = $last_name;
@@ -60,6 +73,7 @@ for ($i = 0; $i < $limit; $i++) {
     $data['country'] = $country;
     $data['country_code'] = $country_code;
     $data['birthdate'] = $birthdate;
+    $data['photo'] = $photo;
     $items[] = $data;
 }
 
