@@ -27,7 +27,8 @@ function nif_validation($cif)
         $checksum = substr($control, ((10 - ($checksum % 10)) % 10), 1);
         return ($parts[3] == $checksum);
     }
-    return false;
+
+    throw new BadRequestException();
 }
 
 $result = nif_validation($value);

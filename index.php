@@ -38,7 +38,6 @@ if (file_exists($path)) {
     try {
         require $path;
     } catch (Exception $e) {
-
         http_response_code(400);
 
         if ($format == 'json') {
@@ -49,11 +48,11 @@ if (file_exists($path)) {
             );
             echo json_encode($data);
         } else {
-
             header("Content-type: text/plain");
 
             echo $e->getMessage();
         }
+
         exit();
     }
 
