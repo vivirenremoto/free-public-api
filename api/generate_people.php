@@ -63,7 +63,7 @@ for ($i = 0; $i < $limit; $i++) {
     $email = str_replace('ñ', 'n', $email);
     $email .= rand(1, 1000) . '@' . $email_providers[0];
 
-    $photo = 'https://free-public-api.herokuapp.com/api/sources/faces/' . $gender . '/' . basename($faces[$gender][0]);
+    $photo = $base_url . '/api/sources/faces/' . $gender . '/' . basename($faces[$gender][0]);
 
     $data = array();
     $data['first_name'] = $name;
