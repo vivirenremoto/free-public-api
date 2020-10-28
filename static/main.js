@@ -23,7 +23,7 @@ function showInfo(data) {
 function showModal(obj) {
     var title = $(obj).data('title').split(' - ')[1];
     var url = $(obj).data('url');
-    var api = $(obj).data('format');
+    var api = $(obj).data('api');
     var format = $(obj).data('format');
 
     $('#ModalLabel').html(title);
