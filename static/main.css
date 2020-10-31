@@ -31,11 +31,11 @@ input:focus{
     margin-bottom:-30px;
 }
 
-.category {
+.item {
     cursor: pointer;
 }
 
-.category:hover {
+.item:hover {
     opacity:0.8;
 }
 
@@ -43,91 +43,91 @@ input:focus{
     height:160px;
 }
 
-.category_generate .card {
+.category_Generate .card {
     background: black;
 }
 
-.category_generate .card .category_icon {
+.category_Generate .card .category_icon {
     background: url('img/generate.png') no-repeat center center;
     font-size: 220px;
 }
 
 
-.category_validate .card {
+.category_Validate .card {
     background: #538d22;
 }
 
-.category_validate .card .category_icon {
+.category_Validate .card .category_icon {
     background: url('img/validate.png') no-repeat center center;
     font-size: 220px;
 }
 
 
-.category_multimedia .card {
+.category_Multimedia .card {
     background: #560bad;
 }
 
-.category_multimedia .card .category_icon {
+.category_Multimedia .card .category_icon {
     background: url('img/multimedia.png') no-repeat center center;
     font-size: 220px;
 }
 
 
-.category_user .card {
+.category_User .card {
     background: #f75c03;
 }
 
-.category_user .card .category_icon {
+.category_User .card .category_icon {
     background: url('img/user.png') no-repeat center center;
     font-size: 220px;
 }
 
 
-.category_location .card {
+.category_Location .card {
     background: #da2c38;
 }
 
-.category_location .card .category_icon {
+.category_Location .card .category_icon {
     background: url('img/location.png') no-repeat center center;
     font-size: 220px;
 }
 
 
-.category_currency .card {
+.category_Currency .card {
     background: #f2af29;
 }
 
-.category_currency .card .category_icon {
+.category_Currency .card .category_icon {
     background: url('img/currency.png') no-repeat center center;
     font-size: 220px;
 }
 
 
-.category_apps .card {
+.category_Apps .card {
     background: #0ead69;
 }
 
-.category_apps .card .category_icon {
+.category_Apps .card .category_icon {
     background: url('img/apps.png') no-repeat center center;
     font-size: 220px;
 }
 
 
-.category_seo .card {
+.category_SEO .card {
     background: #00b4d8;
 }
 
-.category_seo .card .category_icon {
+.category_SEO .card .category_icon {
     background: url('img/seo.png') no-repeat center center;
     font-size: 220px;
 }
 
 
-.category_search .card {
+.category_Search .card {
     background: #2667ff;
 }
 
-.category_search .card .category_icon {
+.category_Search .card .category_icon {
     background: url('img/search.png') no-repeat center center;
     font-size: 220px;
 }
