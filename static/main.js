@@ -15,6 +15,44 @@ function showInfo(data) {
     Sheetsee.initiateTableFilter(tableOptions);
 
 
+    var categories = [];
+    $('.item').each(function () {
+        var category = $(this).data('category');
+        if ($.inArray(category, categories) == -1) {
+            categories.push(category);
+        }
+    });
+
+
+    categories.sort();
+
+    $(categories).each(function (key, elem) {
+        $('.pagination').append('<li class="page-item btn_filter"><a class="page-link" href="#' + elem + '">' + elem + '</a></li>');
+    })
+
+
+    $('.pagination').hide().css('visibility', 'visible').fadeIn('slow');
+
+
+    $('.btn_filter').click(function () {
+
+        $('#search').val('');
+
+        $('.btn_filter').removeClass('active');
+        $(this).addClass('active');
+
+        var category = $(this).find('a').attr('href').replace('#', '');
+
+        if (category) {
+            $('.category').hide();
+            $('.category_' + category).show();
+
+        } else {
+            $('.category').show();
+        }
+    });
+
+
     if (document.location.hash) {
         $('.btn_filter a[href$=' + document.location.hash.replace('#', '') + ']').click();
     }
@@ -28,6 +66,7 @@ function showModal(obj) {
 
     $('#ModalLabel').html(title);
     $('#full_url').val(url);
+    $('#spreadsheet_url').val('=IMPORTDATA("' + url + '")');
 
 
     var t_url = url.split('?');
@@ -70,28 +109,11 @@ function showModal(obj) {
 }
 
 $(function () {
-    $('.btn_filter').click(function () {
-
-        $('#search').val('');
-
-        $('.btn_filter').removeClass('active');
-        $(this).addClass('active');
-
-        var category = $(this).find('a').attr('href').replace('#', '');
-
-        if (category) {
-            $('.category').hide();
-            $('.category_' + category).show();
-
-        } else {
-            $('.category').show();
-        }
-    });
 
     $('#search').keyup(function () {
 
         $('.btn_filter').removeClass('active');
-        $('.btn_filter:First').addClass('active');
+        $('.btn_filter:first').addClass('active');
 
 
         $('.category').hide();
@@ -104,6 +126,10 @@ $(function () {
     });
 
     $('#full_url').click(function () {
+        $(this).select();
+    });
+
+    $('#spreadsheet_url').click(function () {
         $(this).select();
     });
 

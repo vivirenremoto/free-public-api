@@ -138,6 +138,7 @@ input:focus{
 
 .pagination {
     justify-content: center;
+    visibility: hidden;
 }
 
 .page-link {
