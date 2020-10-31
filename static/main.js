@@ -74,8 +74,8 @@ $(function () {
 
         $('#search').val('');
 
-        $('.btn_filter').removeClass('btn-primary').addClass('btn-secondary');
-        $(this).addClass('btn-primary').removeClass('btn-secondary');
+        $('.btn_filter').removeClass('active');
+        $(this).addClass('active');
 
         var category = $(this).attr('href').replace('#', '');
 
