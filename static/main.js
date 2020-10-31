@@ -90,8 +90,8 @@ $(function () {
 
     $('#search').keyup(function () {
 
-        $('.btn_filter').removeClass('btn-primary').addClass('btn-secondary');
-        $('.btn_filter:First').addClass('btn-primary').removeClass('btn-secondary');
+        $('.btn_filter').removeClass('active');
+        $('.btn_filter:First').addClass('active');
 
 
         $('.category').hide();
