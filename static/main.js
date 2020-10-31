@@ -77,7 +77,7 @@ $(function () {
         $('.btn_filter').removeClass('active');
         $(this).addClass('active');
 
-        var category = $(this).attr('href').replace('#', '');
+        var category = $(this).find('a').attr('href').replace('#', '');
 
         if (category) {
             $('.category').hide();
