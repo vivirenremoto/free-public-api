@@ -44,11 +44,11 @@ function showInfo(data) {
         var category = $(this).find('a').attr('href').replace('#', '');
 
         if (category) {
-            $('.category').hide();
+            $('.item').hide();
             $('.category_' + category).show();
 
         } else {
-            $('.category').show();
+            $('.item').show();
         }
     });
 
@@ -116,9 +116,9 @@ $(function () {
         $('.btn_filter:first').addClass('active');
 
 
-        $('.category').hide();
+        $('.item').hide();
 
-        $('.category').each(function () {
+        $('.item').each(function () {
             if ($(this).data('title').toLowerCase().indexOf($('#search').val().toLowerCase()) > -1) {
                 $(this).show();
             }
