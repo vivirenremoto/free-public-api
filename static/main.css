@@ -136,6 +136,9 @@ input:focus{
 #github img{width:120px;}
 
 
+.pagination {
+    justify-content: center;
+}
 
 .page-link {
     background: none;
@@ -149,6 +152,10 @@ input:focus{
 
 @media only screen and (max-width: 480px){
     #github img{width:80px;}
+
+    .pagination {
+        justify-content: inherit;
+    }
 
     #filters{
         overflow-x:scroll;

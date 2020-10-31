@@ -16,7 +16,7 @@ function showInfo(data) {
 
 
     if (document.location.hash) {
-        $('.btn_filter[href$=' + document.location.hash.replace('#', '') + ']').click();
+        $('.btn_filter a[href$=' + document.location.hash.replace('#', '') + ']').click();
     }
 }
 
