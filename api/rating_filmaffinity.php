@@ -8,4 +8,12 @@ preg_match($pattern, $data, $matches);
 
 if (isset($matches[1])) {
     $result = str_replace(',', '.', $matches[1]);
+} else {
+
+    $pattern = '/<div id="movie-rat-avg" itemprop="ratingValue" content="([0-9\.]*)">/';
+    preg_match($pattern, $data, $matches);
+
+    if (isset($matches[1])) {
+        $result = $matches[1];
+    }
 }
