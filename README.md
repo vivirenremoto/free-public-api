@@ -17,6 +17,7 @@ A bunch of APIs to solve small problems
 - default, default value false
 - format [json|text], default text
 - callback, default null
+- spreadsheet, required value if you are using google spreadsheets
 
 **Response**
 
