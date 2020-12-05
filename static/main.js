@@ -98,7 +98,7 @@ function showModal(obj) {
                 $('#params tbody').append('<tr><td width="25%">callback</td><td width="75%">optional</td></tr>');
             }
 
-            $('#params tbody').append('<tr><td width="25%">spreadsheet</td><td width="75%">requiered value if you are using google spreadsheets</td></tr>');
+            $('#params tbody').append('<tr><td width="25%">spreadsheet</td><td width="75%">required value if you are using google spreadsheets</td></tr>');
 
         }
     } else {
