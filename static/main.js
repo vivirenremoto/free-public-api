@@ -66,7 +66,7 @@ function showModal(obj) {
 
     $('#ModalLabel').html(title);
     $('#full_url').val(url);
-    $('#spreadsheet_url').val('=IMPORTDATA("' + url + '")');
+    $('#spreadsheet_url').val('=IMPORTDATA("' + url + '&spreadsheet=1")');
 
 
     var t_url = url.split('?');

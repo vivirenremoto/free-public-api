@@ -22,6 +22,7 @@ $callback = isset($_GET['callback']) ? $_GET['callback'] : null;
 $format = isset($_GET['format']) ? $_GET['format'] : 'text';
 $key = isset($_GET['key']) ? $_GET['key'] : null;
 $default = isset($_GET['default']) ? $_GET['default'] : false;
+$spreadsheet = isset($_GET['spreadsheet']) ? true : false;
 $result = false;
 
 if (isset($_GET['input'])) {
@@ -124,6 +125,10 @@ if (file_exists($path)) {
             }
         }
 
+        if( $spreadsheet ){
+            echo "'";
+        }
+
         echo $result;
     }
 
@@ -147,9 +152,6 @@ if (file_exists($path)) {
 
     } else {
 
-        //http_response_code(301);
-        //$url = 'https://github.com/vivirenremoto/free-public-api';
-        //header('Location: ' . $url);
         require __DIR__ . '/home.html';
 
     }
