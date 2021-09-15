@@ -13,11 +13,11 @@ $.ajax({url: sf, type: 'GET', dataType: 'text'})
     let new_table = [];
     for(let i=1; i<rows.length; i++){
         new_table.push({
-            category: rows[i][0],
-            title: rows[i][1],
-            description: rows[i][2],
-            photo: rows[i][3],
-            url: rows[i][4],
+            title: rows[i][0],
+            url: rows[i][1],
+            category: rows[i][2],
+            api: rows[i][3],
+            format: rows[i][4],
         });
     }
 
