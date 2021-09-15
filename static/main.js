@@ -1,5 +1,3 @@
-
-
 var sf = "https://docs.google.com/spreadsheets/d/1XpPv4LMmjkJNxlrjaBxSN3PVzA9PFRxBgGveDtlIejo/gviz/tq?tqx=out:json";
 $.ajax({url: sf, type: 'GET', dataType: 'text'})
 .done(function(data) {
@@ -8,16 +6,23 @@ $.ajax({url: sf, type: 'GET', dataType: 'text'})
     const obj = JSON.parse(r[1]);
     const table = obj.table;
     const header = table.cols.map(({label}) => label);
-    const rows = table.rows.map(({c}) => c.map(({v}) => v));
+    const rows = table.rows;
 
     let new_table = [];
     for(let i=1; i<rows.length; i++){
+
+        if( rows[i].c[3] ){
+            var api = rows[i].c[3].v;
+        }else{
+            var api = false;
+        }
+
         new_table.push({
-            title: rows[i][0],
-            url: rows[i][1],
-            category: rows[i][2],
-            api: rows[i][3],
-            format: rows[i][4],
+            title: rows[i].c[0].v,
+            url: rows[i].c[1].v,
+            category: rows[i].c[2].v,
+            api: api,
+            format: rows[i].c[4].v,
         });
     }
 
@@ -26,8 +31,6 @@ $.ajax({url: sf, type: 'GET', dataType: 'text'})
   }
 })
 .fail((e) => console.log(e.status));
-
-
 
 
 
@@ -46,7 +49,9 @@ function showInfo(data) {
     $('.item').each(function () {
         var category = $(this).data('category');
         if ($.inArray(category, categories) == -1) {
+          if( category ){
             categories.push(category);
+          }
         }
     });
 
